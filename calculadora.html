@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="styleCalculadora.css"> 
+       
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="calculadora">
+
+                <input id ="display" type="text" class="calculadora-numeros" value="0">
+
+                <div class="calculadora-botones">
+                    <!-- <button class="boton is-clear span-2 orange operator" onclick="clearDisplay()">C</button> -->
+                    <button class="boton naranja operator" onclick="clearDisplay()">C</button>
+                    <button class="boton" onclick="addInput('(')">(</button>
+                    <button class="boton naranja operator" onclick="agregarMemoria()" >MR</button>
+                    <button class="boton naranja operator" onclick="addInput('/')">&divide;</button>
+                    <button class="boton" onclick="addInput('7')">7</button>
+                    <button class="boton" onclick="addInput('8')">8</button>
+                    <button class="boton" onclick="addInput('9')">9</button>
+                    <button class="boton naranja operator" onclick="addInput('*')">x</button>
+                    <button class="boton" onclick="addInput('4')">4</button>
+                    <button class="boton" onclick="addInput('5')">5</button>
+                    <button class="boton" onclick="addInput('6')">6</button>
+                    <button class="boton naranja" onclick="addInput('-')">-</button>
+                    <button class="boton" onclick="addInput('1')">1</button>
+                    <button class="boton" onclick="addInput('2')">2</button>
+                    <button class="boton" onclick="addInput('3')">3</button>
+                    <button class="boton naranja operator" onclick="addInput('+')">+</button>
+                    <button class="boton" onclick="addInput('0')">0</button>
+                    <!-- Se ha agregado los parentesis para evaluar expresiones compuestas -->
+                    <button class="boton" onclick="addInput(')')">)</button>
+                    <button class="boton" onclick="addInput('.')">.</button>
+                    <button class="boton naranja operator" onclick="calculate()">=</button>
+                    
+                </div>
+
+            </div>
+
+        </div>
+        <script src="scriptCalculadora.js"></script> 
+    </body>
+</html>
